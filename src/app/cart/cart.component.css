@@ -1,0 +1,211 @@
+/* Container styling for the entire cart section */
+.cartBox {
+  background-color: #fff;
+  padding: 40px 50px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.cartBox:hover {
+  transform: translateY(-5px); /* Slight lift effect */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.cartBox img {
+  width: 100%;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+/* Hover effect for images */
+.cartBox img:hover {
+  transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Price Box styling */
+.priceBox {
+  background-color: #fff;
+  padding: 30px 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.priceBox:hover {
+  transform: translateY(-5px); /* Slight lift effect */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+/* Product row styling */
+.cartBox .row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 0;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect for cart item rows */
+.cartBox .row:hover {
+  background-color: #f7f7f7; /* Light background change on hover */
+  border-radius: 8px;
+}
+
+/* Price details in priceBox */
+.priceBox .float-start, .priceBox .float-end {
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+}
+
+.priceBox .float-end {
+  font-weight: bold;
+}
+
+/* Modal styling */
+.modal-content {
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.modal-header {
+  background-color: #f4f4f4;
+  border-radius: 10px 10px 0 0;
+}
+
+.modal-title {
+  font-weight: 600;
+  color: #333;
+}
+
+.modal-body input, .modal-body textarea {
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  width: 100%;
+}
+
+.modal-footer button {
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+/* Hover effects for modal buttons */
+.modal-footer .btn:hover {
+  background-color: #f39c12;
+  color: white;
+  transform: scale(1.05);
+}
+
+/* Button hover effects for remove and modify counts */
+.btn-danger, .btn-dark {
+  transition: all 0.3s ease;
+}
+
+/* Remove button hover */
+.btn-danger:hover {
+  background-color: #e74c3c;
+  transform: scale(1.1);
+}
+
+/* Modify count button hover */
+.btn-dark:hover {
+  background-color: #34495e;
+  transform: scale(1.1);
+}
+
+/* Improved input box styling */
+input[type="number"] {
+  width: 50px;
+  height: 30px;
+  text-align: center;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  transition: border-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Focus effect for number input */
+input[type="number"]:focus {
+  border-color: #3498db;
+  transform: scale(1.05);
+}
+
+/* Small button improvements */
+.btn-sm {
+  border-radius: 8px;
+}
+
+/* Responsiveness */
+@media screen and (max-width: 768px) {
+  .cartBox {
+    padding: 20px;
+  }
+
+  .cartBox img {
+    width: 60%;
+  }
+
+  .priceBox {
+    padding: 20px;
+  }
+}
+
+/* Modal input styling */
+.modal-body input,
+.modal-body textarea {
+  margin-bottom: 15px;
+  border-radius: 5px;
+  padding: 10px;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+.pTitle{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+/* Styling for priceBox */
+.priceBox {
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Add smooth transitions to modal header */
+.modal-header {
+  background-color: #3498db;
+  color: #fff;
+  border-radius: 10px 10px 0 0;
+}
+
+.priceBox h5 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Cart item image */
+.cartBox img {
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.cartBox img:hover {
+  transform: scale(1.1);
+}
+
+/* Mobile-friendly adjustments */
+@media (max-width: 600px) {
+  .cartBox img {
+    width: 70%;
+  }
+
+  .priceBox {
+    padding: 15px;
+  }
+
+  .cartBox .row {
+    padding: 10px 0;
+  }
+}

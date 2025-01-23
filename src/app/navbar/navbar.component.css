@@ -1,0 +1,95 @@
+/* Brand Styling */
+.brand {
+  font-size: 30px;
+  font-weight: bold;
+  color: #333;
+  text-decoration: none;
+  padding: 0px 30px;
+  transition: transform 0.3s ease-in-out, color 0.3s ease;
+}
+
+/* Hover effect on brand (scaling effect) */
+.brand:hover {
+  transform: scale(1.1);
+  color: #007bff;  /* Highlight color */
+}
+
+/* Link Styling */
+.link {
+  text-decoration: none;
+  font-size: 18px;
+  color: #333;
+  padding: 0px 10px;
+  font-weight: 400;
+  position: relative;
+  transition: color 0.3s ease, padding 0.2s ease-in-out;
+}
+
+/* Hover effect on links */
+.link:hover {
+  color: #007bff;  /* Highlight color on hover */
+  padding-left: 15px;  /* Adds slight shift effect */
+}
+
+/* Underline animation on hover */
+.link:before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: #007bff;
+  bottom: 0;
+  left: 0;
+  transition: width 0.3s ease;
+}
+
+/* Expand underline on hover */
+.link:hover:before {
+  width: 100%;
+}
+
+/* Cart Count Badge Styling */
+.cartCount {
+  font-size: 16px;
+  color: #007bff;
+  font-weight: bold;
+  position: relative;
+  top: -3px;
+  left: 5px;
+}
+
+/* Hover effects for the navbar */
+nav:hover .link {
+  color: #007bff;
+  transform: scale(1.05);
+}
+
+/* Navbar structure and spacing */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 600px) {
+  .brand {
+      padding: 0px 10px;
+  }
+
+  .link {
+      font-size: 16px;
+      padding: 0px 5px;
+  }
+
+  .cartCount {
+      font-size: 14px;
+  }
+
+  nav {
+      display: block;
+  }
+}
+

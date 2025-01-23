@@ -1,0 +1,27 @@
+<nav class="container-fluid bg-white py-2 shadow-sm">
+  <div class="row w-100">
+
+    <!-- Brand Section -->
+    <div class="col-lg-4 col-12">
+      <a class="brand" routerLink="/">Online Store</a>
+    </div>
+
+    <!-- Navigation Links -->
+    <div class="col-lg-4 col-12 offset-lg-4 mt-3 d-flex justify-content-end align-items-center">
+      <a routerLink="/" class="link">
+        <!-- <i class="bi bi-house"></i> Home -->
+         <mat-icon>home</mat-icon>
+      </a>
+      <a routerLink="/cart" class="link">
+        <!-- <i class="bi bi-cart3"></i/> -->
+        <mat-icon>shopping_cart</mat-icon>
+        <span class="cartCount mat-badge" [matBadge]="cartCount" matBadgeColor="accent"></span>
+      </a>
+      <a routerLink="/contact" class="link">
+        <mat-icon>contact_mail</mat-icon>
+        <!-- <i class="bi bi-telephone"></i> Contact -->
+      </a>
+    </div>
+
+  </div>
+</nav>

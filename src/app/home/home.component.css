@@ -1,0 +1,158 @@
+/* Category box styling */
+.categorisBox {
+  border-radius: 5px;
+  text-align: center;
+  background-color: #fff;
+}
+
+.categorisBox a {
+  text-decoration: none;
+  color: #000;
+}
+
+.categorisContent {
+  padding: 20px;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 10px;  /* Rounded corners */
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  overflow: hidden;  /* Ensure content stays within rounded border */
+}
+
+/* Hover effect for category box */
+.categorisContent:hover {
+  transform: translateY(-5px);  /* Slight lift up when hovered */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);  /* Add shadow effect */
+  background-color: #f0f0f0;  /* Change background color on hover */
+}
+
+/* Styling for category image */
+.categorisContent img {
+  object-fit: contain;
+  border-radius: 50%;  /* Circular image */
+  border: 2px solid #3498db;  /* Border around the image */
+  transition: transform 0.3s ease;
+}
+
+/* Hover effect for category image */
+.categorisContent:hover img {
+  transform: scale(1.05);  /* Slight zoom effect when hovered */
+}
+
+/* Styling for category title */
+.categorisContent h4 {
+  font-size: 18px;
+  margin-top: 15px;
+  font-weight: 600;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+/* Hover effect for category title */
+.categorisContent:hover h4 {
+  color: #3498db;  /* Change color to blue when hovered */
+}
+
+/* Product box styling */
+.productBox {
+  background-color: #fff;
+  padding: 30px 50px;
+  border-radius: 5px;
+}
+
+/* Product image styling */
+.productImg {
+  height: 200px;
+  width: 90%;
+}
+
+.productContent img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.productContent h4 {
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.productLink {
+  text-decoration: none;
+  font-size: 14px;
+  color: #000;
+  font-weight: 400;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Updated styles for product card hover animation */
+.product-card {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+  border: 2px solid transparent; /* Initially set to transparent */
+}
+
+/* Mouse hover effect for product card */
+.product-card:hover {
+  transform: scale(1.05); /* Scale up the card */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Increase shadow effect */
+  border: 2px solid #3498db; /* Add a blue border when hovered */
+}
+
+/* Mouse down effect (reset to original size) */
+.product-card:active {
+  transform: scale(1); /* Reset to original size */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Reset shadow effect */
+  border: 2px solid transparent; /* Remove the border */
+}
+
+/* Styling for the "Best of Appliance" link */
+.best-of-link {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  text-decoration: none;
+  padding: 10px 20px;
+  display: inline-block;
+  border-radius: 5px;
+  background-color: #f4f4f4;
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover effect for "Best of Appliance" link */
+.best-of-link:hover {
+  background-color: #3498db;  /* Blue background on hover */
+  color: #fff;  /* White text color on hover */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1); /* Add shadow on hover */
+  transform: translateX(5px); /* Slightly move the link to the right on hover */
+}
+
+/* Styling for the chevron_right mat-icon */
+.mat-icon.chevron-right {
+  font-size: 22px; /* Set the size of the icon */
+  color: #3498db; /* Set the color (blue in this case) */
+  margin-left: 15px;
+  transition: transform 0.3s ease, color 0.3s ease;
+  height: 28px;
+  width: 28px;
+  border-radius: 16px;
+  background-color: #f4f4f4;
+}
+
+/* Hover effect for the chevron_right icon */
+.mat-icon.chevron-right:hover {
+  color: #2980b9; /* Darker blue on hover */
+  transform: translateX(5px); /* Slight movement to the right on hover */
+  background-color: #3498db;
+  color: white;
+}
+
+/* Optional: Adding spacing to the overall container */
+.productBox p {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
